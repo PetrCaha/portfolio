@@ -114,25 +114,31 @@
       <div class="project-info">
         <div class="project-top">
           <h3>Zakázkovník</h3>
-          <span class="tag" data-cs="Vlastní demo" data-en="Personal demo">Vlastní demo</span>
+          <span class="tag" data-cs="Technická případová studie" data-en="Technical case study">Technická případová studie</span>
         </div>
 
         <p
-          data-cs="Webová aplikace pro evidenci zákazníků a zakázek. Praktický projekt zaměřený na přehled o práci a zpracování údajů z faktur."
-          data-en="A web app for tracking clients and jobs. A practical project focused on organising work and processing invoice data.">
-          Webová aplikace pro evidenci zákazníků a zakázek. Praktický projekt zaměřený na přehled o práci a zpracování údajů z faktur.
+          data-cs="Původní Django aplikace pro evidenci zakázek a zpracování fakturačních údajů. Projekt ukazuje vývoj datového modelu, backendových pravidel, uživatelských oprávnění a historie změn. Z tohoto základu později vznikla samostatná veřejná ukázka PC WORKBASE."
+          data-en="The original Django application for tracking jobs and processing invoice data. The project explores the development of its data model, backend rules, user permissions and change history. It later became the foundation for PC WORKBASE, a separate public demo.">
+          Původní Django aplikace pro evidenci zakázek a zpracování fakturačních údajů. Projekt ukazuje vývoj datového modelu, backendových pravidel, uživatelských oprávnění a historie změn. Z tohoto základu později vznikla samostatná veřejná ukázka PC WORKBASE.
         </p>
 
         <div class="stack">Python <span>·</span> Django <span>·</span> PostgreSQL</div>
 
-        <a class="text-link"
-           href="https://zakazkovnik-demo.onrender.com"
-           target="_blank"
-           rel="noopener"
-           data-cs="Otevřít demo ↗"
-           data-en="Open demo ↗">
-          Otevřít demo ↗
-        </a>
+        <details class="technical-study">
+          <summary data-cs="Prohlédnout technický rozbor" data-en="Explore the technical case study">Prohlédnout technický rozbor</summary>
+          <div class="technical-study-content">
+            <h4 data-cs="Datový model" data-en="Data model">Datový model</h4>
+            <p data-cs="Propojení zákazníků, kontaktních osob a zakázek, včetně více faktur u jedné zakázky. Vývoj modelu zachycují databázové migrace."
+               data-en="Relationships between customers, contacts and jobs, including multiple invoices per job. Database migrations track the evolution of the model.">Propojení zákazníků, kontaktních osob a zakázek, včetně více faktur u jedné zakázky. Vývoj modelu zachycují databázové migrace.</p>
+            <h4 data-cs="Backendová pravidla" data-en="Backend rules">Backendová pravidla</h4>
+            <p data-cs="Role a oprávnění určují, kdo může údaje měnit, archivovat nebo mazat. Historie změn zaznamenává provedené úpravy; oprávnění kontroluje server."
+               data-en="Roles and permissions determine who can edit, archive or delete records. Change history records updates, and permissions are enforced on the server.">Role a oprávnění určují, kdo může údaje měnit, archivovat nebo mazat. Historie změn zaznamenává provedené úpravy; oprávnění kontroluje server.</p>
+            <h4 data-cs="Fakturační údaje" data-en="Invoice data">Fakturační údaje</h4>
+            <p data-cs="Načtené údaje z faktur procházejí kontrolním formulářem před uložením. Aplikace uchovává údaje a rozpoznaný text, nikoli originální fotografii nebo PDF."
+               data-en="Extracted invoice data is reviewed in a form before saving. The application stores the data and extracted text, rather than the original photo or PDF.">Načtené údaje z faktur procházejí kontrolním formulářem před uložením. Aplikace uchovává údaje a rozpoznaný text, nikoli originální fotografii nebo PDF.</p>
+          </div>
+        </details>
       </div>
     </article>
 

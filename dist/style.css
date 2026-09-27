@@ -7,3 +7,11 @@
 .project-workbase .demo-note{font-size:14px;margin:0 0 20px}
 @media(max-width:800px){.workbase .project-word{font-size:clamp(30px,7vw,44px)}}
 @media(max-width:380px){.workbase .visual-footer{align-items:flex-start;flex-direction:column;gap:8px}}
+
+/* Zakázkovník technical case study */
+.technical-study summary{width:fit-content;max-width:100%;cursor:pointer;font-size:14px;font-weight:700;text-decoration:underline;text-decoration-color:#a4abb4;text-underline-offset:6px}
+.technical-study summary:focus-visible{outline:3px solid #547622;outline-offset:6px}
+.technical-study-content{margin-top:22px;padding-top:20px;border-top:1px solid #d9dce1}
+.technical-study-content h4{font-size:15px;margin:20px 0 8px}
+.technical-study-content h4:first-child{margin-top:0}
+.project-info .technical-study-content p{font-size:14px;line-height:1.7;margin:0}
