@@ -1,0 +1,27 @@
+/* Styles specific to the English Upwork portfolio. */
+.upwork header { gap: 24px; }
+.upwork nav { flex-wrap: wrap; }
+.upwork nav a { display: inline-block; padding: 8px 0; }
+.upwork .hero h1 { margin-bottom: 16px; }
+.upwork .hero-role { margin: 0 0 32px; color: #667583; font-size: clamp(28px, 4vw, 48px); line-height: 1.2; letter-spacing: -1.5px; }
+.upwork .tech-line { margin: 30px 0 0; color: #626975; font-size: 13px; line-height: 1.9; }
+.upwork .project > *, .upwork .about > *, .upwork .services > div > div { min-width: 0; }
+.upwork .tag { max-width: 100%; }
+.upwork .text-link { display: inline-block; }
+.upwork .technical-study { margin-top: 24px; }
+.upwork .technical-study summary { padding: 6px 0; }
+.upwork .services p { font-size: 14px; margin: 6px 0 0; }
+.upwork footer > span { display: block; }
+.upwork a:hover { text-decoration: underline; text-underline-offset: 5px; }
+.upwork a:focus-visible, .upwork summary:focus-visible { outline: 3px solid #547622; outline-offset: 5px; }
+.upwork main:focus { outline: none; }
+@media (max-width: 560px) {
+  .upwork header { height: auto; min-height: 90px; flex-wrap: wrap; padding-top: 20px; padding-bottom: 20px; gap: 12px 24px; }
+  .upwork nav { gap: 24px; }
+  .upwork nav a:nth-child(2) { display: inline-block; }
+  .upwork .hero { padding-top: 32px; }
+  .upwork .hero-role { letter-spacing: -0.8px; }
+  .upwork .visual-footer { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .upwork .project-word { font-size: clamp(30px, 9vw, 44px); }
+  .upwork .services > div { gap: 18px; }
+}
